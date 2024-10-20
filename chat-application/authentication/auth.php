@@ -11,7 +11,7 @@ $registerinput = "INSERT INTO `register_data`(`id`, `loginemail`, `loginpassword
 $result = mysqli_query($connection, $registerinput);
 
 if (!$result) {
-    echo "Data gayab";
+    echo "Data not received!";
 } else {
     header("Location: ../user.php");
     exit();
